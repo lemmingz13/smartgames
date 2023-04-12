@@ -1,0 +1,66 @@
+.games_inform {
+    font-size: 24px;
+    color: #666666;
+    text-align: center;
+}
+
+.games_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.game {
+    color: #666666;
+    text-align: center;
+    padding: 10px 0;
+}
+.game img {
+    width: 400px;
+    height: 300px;
+    border: 10px solid #336666;
+    /* border-radius: 20px; */
+    z-index: 22;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(34, 60, 80, 0.6);
+-moz-box-shadow: 0px 0px 9px 3px rgba(34, 60, 80, 0.6);
+box-shadow: 0px 0px 9px 3px rgba(34, 60, 80, 0.6);
+}
+.game_title {
+    font-size: 28px;
+    padding: 10px 0;
+}
+.game_description {
+    font-size: 20px;
+    color: #CC9933;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+.muButton {
+    color: #339900;
+    font-size: 28px;
+    display: inline-block;
+    transition: all .1s linear;
+}
+.muButton:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+.muButton:active {
+    transform: rotate(-10deg);
+}
+
+@media (max-width: 560px) { 
+    .games_inform {
+        font-size: 18px;
+    }
+    .game img {
+        width: 300px;
+        height: 200px;
+    }
+    .game_title {
+        font-size: 24px;
+    }
+    .muButton {
+        font-size: 20px;
+    }
+}
